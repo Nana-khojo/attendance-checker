@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+body {
+    font-family: "oxygen", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#adminPanel {
+    display: none;
+}
+
+.card{
+    border-radius: 12px;
+}
+input{
+    padding-right: 10rem;
+}
+
+input::placeholder {
+    font-style: italic;
+    color: #6c757d;
+}
+
+.table th, .table td{
+    text-align: center;
+    vertical-align: middle;
+}
