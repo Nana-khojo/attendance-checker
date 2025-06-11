@@ -2,12 +2,12 @@
 const cacheName = 'attendance-v1';
 const filesToCache = [
     '/',
-    './index.html',
-    './style.css',
-    './script.js',
-    './manifest.json',
-    './icon-192.png',
-    './icon-512.png'
+    '/index.html',
+    '/style.css',
+    '/script.js',
+    '/manifest.json',
+    '/icon-192.png',
+    '/icon-512.png'
 ];
 
 self.addEventListener('install', e => {
