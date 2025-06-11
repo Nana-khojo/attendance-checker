@@ -1,8 +1,8 @@
 function loadStudentMap () {
     return JSON.parse(localStorage.getItem('studentMap')) || {
-        "Isaac Abeka": "2425400999",
-        "Bright Ampomah": "2425401208",
-        "Ebenezer Yamoah": "2425401177"
+        "2425400999": "ISAAC ABEKA",
+        "2425401208": "BRIGHT AMPOMAH",
+        "2425401177": "EBENEZER YAMOAH JONAH"
     };
 }
 
@@ -17,11 +17,11 @@ const tableBody = document.querySelector("#attendanceTable tbody");
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const name = document.getElementById('studentName').value.trim();
-    const id = studentMap[name];
+    const id = document.getElementById('studentID').value.trim();
+    const name = studentMap[id];
 
-    if (!name || !id) {
-        alert ("Name not found! Please use registered name.");
+    if (!id || !name) {
+        alert ("ID not found! Please use registered ID.");
         return;
     }
 
@@ -98,6 +98,7 @@ toggleAdmin.addEventListener("click", () => {
     const password = prompt("Enter Admin Password");
     if (password === "admin123") {
         adminPanel.style.display = "block";
+        
         toggleAdmin.textContent = "Lock Panel";
     }else{
         alert("Incorrect Password!");
