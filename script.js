@@ -93,7 +93,7 @@ document.getElementById('clearData').addEventListener('click', () => {
 
 const adminPanel = document.getElementById("adminPanel");
 const toggleAdmin = document.getElementById("toggleAdmin");
-const tableList = document.getElementById("attendance-list");
+const tableList = document.getElementById("attendancelist");
 
 toggleAdmin.addEventListener("click", () => {
     const password = prompt("Enter Admin Password");

@@ -9,9 +9,7 @@ body {
 #adminPanel {
     display: none;
 }
-#attendance-list{
-    display: none;
-}
+
 .card{
     border-radius: 12px;
 }
