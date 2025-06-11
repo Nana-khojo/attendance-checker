@@ -93,11 +93,14 @@ document.getElementById('clearData').addEventListener('click', () => {
 
 const adminPanel = document.getElementById("adminPanel");
 const toggleAdmin = document.getElementById("toggleAdmin");
+const tableList = document.getElementById("attendance-list");
 
 toggleAdmin.addEventListener("click", () => {
     const password = prompt("Enter Admin Password");
     if (password === "admin123") {
         adminPanel.style.display = "block";
+
+        tableList.style.display = "block";
         
         toggleAdmin.textContent = "Lock Panel";
     }else{
